@@ -1,0 +1,499 @@
+*{
+margin: 0;
+padding: 0;
+}
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'PT Serif', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#A{
+   position: relative;
+   width: 100vw;
+   height:100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+#A::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(image/image2.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   filter: brightness(50%);
+}
+#B{
+    position: absolute;
+}
+
+#B h1{
+    color: #fff;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 2px #000;
+}
+#B h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px #000;
+}
+#B a{
+    color: #fff;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid orange;
+    background: rgb(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+}
+#B a:hover{
+   background: navy;
+}
+
+#C{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+}
+#D{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0, 0, 0, 0.5);
+}
+#D h1{
+  color: orange;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 2px #000;
+  font-family: cursive;
+}
+#D ul{
+    display: flex;
+}
+#D ul li{
+   list-style: none;
+   padding: 3px 15px 3px 15px;
+}
+#D ul li:hover, #phone a:hover, #mobile ul li:hover{
+    background: navy;
+    cursor: pointer;
+}
+#D ul li a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 1.1rem;
+} 
+#phone a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 1.1rem;
+     padding: 1px 15px 3px 15px;
+     border: 1px solid orange;
+}
+#mobile{
+     display: none;
+     height: 40px;
+     line-height: 40px;
+     background-color: magenta;
+}
+#mobile ul{
+    display: flex;
+    justify-content: center;
+}
+
+#mobile ul li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+#mobile ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+
+
+
+
+
+
+#menu{
+    padding: 25px 0 25px 0;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: verdana;
+}
+#E{
+   display: flex;
+   padding: 0 100px 0 100px;
+}
+#F{
+   box-shadow: 2px 2px 2px #bbb;
+   border: 1px solid #bbb;
+   background-color: #fff;
+   margin: 10px;
+   padding: 10px;
+   flex: 1;
+}
+#F h2{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+}
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+#chef{
+    padding: 25px 0 25px 0;
+}
+#G{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.H{
+   text-align: center;
+   padding: 10px;
+   margin: 5px;
+}
+#img{
+   width: 200px;
+   height: 250px;
+   margin: auto;
+}
+#img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+#propos{
+    padding: 25px 0 25px 0;
+}
+#I{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0 100px 0 100px;
+}
+
+
+.J{
+    flex: 1;
+}
+#proposimg{
+   width: 500px;
+   height: 500px;
+   border-radius: 100%;
+   margin: auto;
+}
+
+#proposimg img{
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   object-fit: fill;
+}
+
+
+.J h2{
+    text-align: center;
+    font-family: cursive;
+}
+
+.J p{
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+
+ /* Style de la section de contact */
+#contact {
+    display: flex; /* Utilisation de Flexbox pour le positionnement */
+    background: url(image/image70.jpg)  center/cover;
+    padding: 20px; /* Espacement intérieur en haut et en bas */
+    width: 100%; /* Largeur maximale de la section */
+}
+
+.l{
+    
+    display: flex; /* Utilisation de Flexbox pour le positionnement */
+    flex-direction: row; /* Alignement des éléments enfants horizontalement */
+    justify-content: space-between;/* Répartit l'espace disponible entre les éléments enfants */
+    align-items: center; /* Alignement vertical des éléments enfants */
+    width: 100%;
+    margin-top: 60px; /* Marge supérieure pour l'espacement */
+    
+}
+.l-left{
+    padding-left: 100px;
+    width: 50%;
+    
+  }
+  /* Style des widgets à droite */
+.l-right {
+    display: flex; /* Utilisation de Flexbox pour le positionnement */
+    flex-direction: column; /* Alignement des éléments enfants verticalement */
+    padding: 0 20px; /* Espacement intérieur des widgets */
+    padding-left: 40px; /* Marge à gauche pour séparer du formulaire */
+}
+
+/* Style des widgets à droite */
+/* Style des widgets dans la partie droite */
+.l-right .widget {
+    display: inline; /* Les widgets sont affichés en ligne les uns à côté des autres */
+    margin-bottom: 25px; /* Marge inférieure entre les widgets */
+}
+
+/* Style des paragraphes à l'intérieur des widgets */
+.l-right .widget p {
+    letter-spacing: 0.5px; /* Espacement entre les lettres */
+    line-height: 26px; /* Hauteur de ligne */
+}
+
+/* Style des paragraphes dans les adresses à l'intérieur des widgets */
+.l-right .widget address p span {
+    display: inline-block; /* Les éléments <span> sont affichés en ligne et forment des blocs */
+    margin-right: 20px; /* Marge à droite pour séparer les éléments */
+    min-width: 130px; /* Largeur minimale pour les éléments, assure une certaine uniformité */
+}
+
+.l h3{
+    text-decoration: underline;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff; /* Ombres noires autour du texte */
+}
+.l p,h3{
+   font-weight: bold;
+   color: #000000;
+   margin: 10px; /* Marge autour des paragraphes et des titres */
+   text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff; /* Ombres noires autour du texte */
+}
+.l p a{
+    text-decoration:none;
+    color: #000000;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff; /* Ombres noires autour du texte */
+}
+
+
+
+
+.l-left form{
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(206, 145, 168, 0.432); 
+   padding: 10px 40px 20px 20px;
+   
+}
+.l-left form h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.l-left form input{
+    width: 100%;
+    height: 17pt;
+    padding: 6px;
+    margin: 5px;
+}
+.l-left form textarea{
+   width: 100%;
+   padding: 6px;
+   margin: 5px;
+   border-radius: 0;
+} 
+
+/* Style du bouton du formulaire */
+.l-left form button {
+    margin: auto; /* Centrage horizontal du bouton */
+    padding: 10px; /* Espacement intérieur du bouton */
+    color: #fff; /* Couleur du texte */
+    background-color: rgba(255, 166, 0, 0.452); /* Couleur de fond du bouton */
+    border: 1px solid orange; /* Bordure du bouton */
+    cursor: pointer; /* Curseur pointeur au survol */
+}
+
+
+/*==================
+ MAP SECTION
+====================*/
+#mu-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Style du footer */
+footer {
+    background: rgba(36, 36, 36, 0.863); /* Couleur de fond grise floutée */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte au centre */
+    height: 80px; /* Hauteur du footer */
+}
+
+/* Style de la zone du footer */
+.mu-footer-area {
+    display: flex; /* Utilisation de Flexbox pour le positionnement */
+    flex-direction: column;
+    justify-content:center; /* Centrage horizontal du contenu */
+    align-items:center; /* Centrage vertical du contenu */
+}
+/* Style des icônes sociales */
+.mu-footer-social {
+    order: 1; /* Les icônes sociales apparaîtront en premier */
+    text-align: center; /* Alignement des icônes au centre */
+    margin-top: 20px; /* Marge en haut */
+    
+    
+}
+.mu-footer-social a {
+    color: #fff; /* Couleur du texte des icônes */
+    font-size: 20px; /* Taille des icônes */
+    margin-right: 10px; /* Marge entre les icônes */
+    display: inline-block; /* Affichage en ligne */
+    width: 40px; /* Largeur des icônes */
+    height: 40px; /* Hauteur des icônes */
+    border-radius: 50%; /* Bordure arrondie pour créer un cercle */
+    background-color: rgb(216, 24, 98); ; /* Couleur de fond grise */
+    color: white;
+    margin: 3px;
+    line-height: 40px; /* Centrage vertical */
+    text-align: center; /* Centrage horizontal */
+    transition: background-color 0.3s; /* Transition fluide pour le changement de couleur au survol */
+}
+
+/* Changement de couleur au survol */
+.mu-footer-social a:hover {
+    background-color: #313030; /* Couleur de fond gris plus foncé au survol */
+}
+/* Style du texte de droit d'auteur */
+.mu-footer-copyright p {
+    order: 2; /* Les icônes sociales apparaîtront en premier */
+    
+}
+
+
+
+
+
+
+
+#top{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+#commander{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff9e67;
+    border: 2px solid #ff7b10;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+#commander:hover {
+    background-color: white;
+    color: olive;
+    border-color: orange;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 768px){
+    #C{
+        position: absolute;
+    }
+    #mobile{
+        display: block;
+    }
+    #D ul{
+        display: none;
+    }
+    html {
+        font-size: 95%;
+    }
+    #E,#I,#contact,#k{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media screen and (max-width : 360px){
+html{
+    font-size: 70%;
+    }
+    #proposimg{
+        width: 220px;
+        height: 220px;
+     }
+}
+
+
+
+
+
